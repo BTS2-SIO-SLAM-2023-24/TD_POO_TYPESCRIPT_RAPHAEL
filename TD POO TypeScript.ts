@@ -1,4 +1,5 @@
 class Animal {
+    private AnimalHeureux:boolean = false
     private id: number;
     private nom : string;
     private age : number;
@@ -8,6 +9,11 @@ class Animal {
         this.age = age;
         this.nom = nom;
     }
+    setAnimalheureux(animalheureux:boolean){
+        this.AnimalHeureux=animalheureux
+    }
+
+    
 
     getId():number{
         return this.id
@@ -43,3 +49,5 @@ class Chien extends Animal{
         this.fairedubruit();
     }
 }
+
+const chien1 = new Chien(1,"Buddy",3)
