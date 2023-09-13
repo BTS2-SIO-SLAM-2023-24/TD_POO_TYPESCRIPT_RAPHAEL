@@ -61,6 +61,14 @@ export class Animal {
     setDateF(datef:Date){
         this.datef = datef
     }
+
+    afficherInfos(){
+        console.log("ID :", this.id, "Nom :", this.nom, "Age :", this.age, "Début Prêt :", this.dated, "Fin Prêt :", this.datef)
+    }
+
+    interaction(){
+        console.log("L'animal interagit de manière générique.");
+    }
 }
 
 

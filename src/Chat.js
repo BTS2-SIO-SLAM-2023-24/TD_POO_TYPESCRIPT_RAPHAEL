@@ -6,6 +6,9 @@ class Chat extends Animal_1.Animal {
     miauler() {
         console.log(`${this.getNom()} miaule`);
     }
+    interaction() {
+        console.log(this.getNom(), "miaule et ronronne.");
+    }
     annoncerbruit() {
         this.miauler();
     }

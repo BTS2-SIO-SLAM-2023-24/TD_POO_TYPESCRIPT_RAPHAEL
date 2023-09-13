@@ -5,7 +5,7 @@ class Employe {
     constructor(id, nom, animal) {
         this.id = id;
         this.nom = nom;
-        this.animal = animal;
+        this.animal = animal !== null ? animal : null; // Affecte null si 'animal' est null, sinon l'objet 'animal'
     }
     getId() {
         return this.id;
@@ -26,7 +26,20 @@ class Employe {
         this.animal = animal;
     }
     travaillerAvec() {
-        console.log(this.animal);
+        if (this.animal !== null) {
+            console.log(this.nom, "travaille avec", this.animal.getNom());
+        }
+        else {
+            console.log("Aucun animal associé à cet employé.");
+        }
+    }
+    // Méthode pour assigner un animal à l'employé
+    assignerAnimal(animal) {
+        this.animal = animal !== null ? animal : null;
+    }
+    // Méthode pour retirer l'animal de l'employé
+    retirerAnimal() {
+        this.animal = null;
     }
 }
 exports.Employe = Employe;
