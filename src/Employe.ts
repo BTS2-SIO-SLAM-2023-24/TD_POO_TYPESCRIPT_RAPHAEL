@@ -52,4 +52,6 @@ export class Employe {
     retirerAnimal(): void {
         this.animal = null;
     }
+
+    
 }

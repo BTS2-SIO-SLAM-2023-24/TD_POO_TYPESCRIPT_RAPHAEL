@@ -27,7 +27,22 @@ chat1.interaction()
 
 const listeAnimaux: Animal[] = [chien1, chat1, oiseau1]
 
+console.log("-----Boucle for-----")
 for (let i = 0; i<listeAnimaux.length; i++){
     console.log(listeAnimaux[i].getNom())
 }
+
+console.log("-----Boucle while-----")
+let n = 0
+while (n < listeAnimaux.length) {
+    console.log(listeAnimaux[n].getNom())
+    n++ // Incrémentez n après avoir accédé à l'élément
+}
+
+console.log("-----Boucle do while-----")
+let d = 0
+do {
+    console.log(listeAnimaux[d].getNom())
+    d++
+} while(d < listeAnimaux.length)
 
