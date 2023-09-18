@@ -2,6 +2,7 @@ import { Chat } from "./Chat";
 import { Chien } from "./Chien";
 import { Oiseau } from "./Oiseau";
 import { Employe } from "./Employe";
+import { Animal } from "./Animal";
 
 const chien1 = new Chien(1, "Buddy", 3, new Date("2023-09-01"), new Date("2023-09-15"));
 const chat1 = new Chat(2, "Whiskers", 2, new Date("2023-08-20"), new Date("2023-09-05"));
