@@ -7,7 +7,9 @@ class Chien extends Animal_1.Animal {
         console.log(`${this.getNom()} aboie`);
     }
     interaction() {
-        console.log(this.getNom(), "aboie et remue la queue");
+        const actions = ["aboie et remue la queue", "fait le beau en sautant joyeusement"];
+        const propositionIndex = Math.floor(Math.random() * actions.length); // Génère un indice aléatoire entre 0 et 1 (exclus)
+        console.log(this.getNom(), actions[propositionIndex]);
     }
     annoncerbruit() {
         this.aboyer();
