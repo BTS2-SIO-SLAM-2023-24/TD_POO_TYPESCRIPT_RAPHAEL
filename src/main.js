@@ -4,7 +4,6 @@ const Chat_1 = require("./Chat");
 const Chien_1 = require("./Chien");
 const Oiseau_1 = require("./Oiseau");
 const Employe_1 = require("./Employe");
-const Animal_1 = require("./Animal");
 const chien1 = new Chien_1.Chien(1, "Buddy", 3, new Date("2023-09-01"), new Date("2023-09-15"));
 const chat1 = new Chat_1.Chat(2, "Whiskers", 2, new Date("2023-08-20"), new Date("2023-09-05"));
 const oiseau1 = new Oiseau_1.Oiseau(6, "Piou", 5, new Date("2023-08-20"), new Date("2023-09-05"), "Rouge");
@@ -21,6 +20,7 @@ chat1.afficherInfos();
 oiseau1.interaction();
 chien1.interaction();
 chat1.interaction();
-for (let animal in Animal_1.Animal) {
-    console.log(animal);
+const listeAnimaux = [chien1, chat1, oiseau1];
+for (let i = 0; i < listeAnimaux.length; i++) {
+    console.log(listeAnimaux[i].getNom());
 }

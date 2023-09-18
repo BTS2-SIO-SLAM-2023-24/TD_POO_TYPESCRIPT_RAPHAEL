@@ -23,3 +23,11 @@ chat1.afficherInfos()
 oiseau1.interaction()
 chien1.interaction()
 chat1.interaction()
+
+
+const listeAnimaux: Animal[] = [chien1, chat1, oiseau1]
+
+for (let i = 0; i<listeAnimaux.length; i++){
+    console.log(listeAnimaux[i].getNom())
+}
+
